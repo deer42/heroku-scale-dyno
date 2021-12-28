@@ -1,0 +1,30 @@
+name: 'Heroku scale dyno'
+description: 'Scale a heroku dyno'
+author: 'deer42'
+inputs:
+  app_name:
+    description: 'Name of the heroku application'
+    required: true
+  process_type:
+    description: 'Type, either web or worker'    
+    required: false
+    default: 'worker'
+  new_scale:
+    description: 'New number of dynos'    
+    required: false
+    default: 1
+  email:
+    description: 'The email address associated with your Heroku account.'
+    required: true
+  api_key:
+    description: "Heroku API key associated with provided user's email."
+    required: true
+outputs:
+  status:
+    description: "The Success/Failure of the action."
+runs:
+  using: "node12"
+  main: "index.js"
+branding:
+  icon: 'power'
+  color: 'green'

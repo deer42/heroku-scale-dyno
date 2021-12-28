@@ -1,0 +1,14 @@
+{
+  "name": "heroku-scale-dyno",
+  "version": "1.0.0",
+  "author": "deer42",
+  "license": "MIT",
+  "description": "Scale a heroku dyno",
+  "main": "src/maint.ts",
+  "scripts": {
+    "start": "node index"
+  },
+  "dependencies": {
+    "@actions/core": "^1.6.0"
+  }
+}
