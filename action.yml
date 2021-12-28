@@ -10,7 +10,7 @@ inputs:
     required: false
     default: 'worker'
   new_scale:
-    description: 'New number of dynos'    
+    description: 'New number of dynos'
     required: false
     default: 1
   email:
